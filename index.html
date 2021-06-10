@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/stylesheet.css">
+    <title>Tip Calculator Group Project</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tip Calculator</h1>
+    </header>
+    <div id="mainarea">
+        <h2>Restaurant</h2>
+
+        <form action="/action_page.php">
+            <label for="price">Price of Meal:</label><br>
+            <input type="text" id="price" name="price"><br><br>
+            <label for="numberOfPeople">Number of People:</label><br>
+            <input type="text" id="numberOfPeople" name="numberOfPeople"><br>
+            <p class="quality">Quality of Service:</p>
+            <div id="radiobtns">
+                <input type="radio" id="oneStar" name="oneStar" value="10">
+                <label for="oneStar">&#9733;</label><br>
+                <input type="radio" id="twoStar" name="twoStar" value="15">
+                <label for="twoStar">&#9733;&#9733;</label><br>
+                <input type="radio" id="threeStar" name="threeStar" value="18">
+                <label for="threeStar">&#9733;&#9733;&#9733;</label><br>
+                <input type="radio" id="fourStar" name="fourStar" value="20">
+                <label for="fourStar">&#9733;&#9733;&#9733;&#9733;</label><br>
+                <input type="radio" id="fiveStar" name="fiveStar" value="25">
+                <label for="fiveStar">&#9733;&#9733;&#9733;&#9733;&#9733;</label><br><br>
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="assets/scripts/tipcalculator.js"></script>
+
+</body>
+
+</html>

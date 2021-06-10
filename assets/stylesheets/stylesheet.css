@@ -1,0 +1,56 @@
+body, p {
+    background-color: tan;
+    color: sienna;
+    position: relative;
+    width: 80%;
+    text-align: left;
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.quality {
+    font-size: 16px;
+}
+
+h1 {
+    padding: 30px;
+    background-color: rgb(168, 140, 104);
+    color: rgb(45, 94, 134);
+    position: relative;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#submit {
+    background-color: sienna;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+
+#mainarea {
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+}
+#radiobtns {
+    color: steelblue;
+    display: block;
+    position: relative;
+    padding: 10px;
+    cursor: crosshair;
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgb(168, 140, 104);
+    color: sienna;
+    position: absolute;
+    width: 80%;
+    text-align: left;
+    padding: 40px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
