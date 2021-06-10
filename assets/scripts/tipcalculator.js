@@ -14,23 +14,36 @@ perPerson
 
 */
 
-//let bill = Number(qi('price').value);
-let bill = Number(qi('price').value);
 let partySize = Number(qi('numberOfPeople').value);
-//let bill = Number(document.getElementById('price').value);
-//let partySize = Number(document.getElementById('numberOfPeople').value);
+let ratings = ['oneStar', 'twoStar', 'threeStar', 'fourStar', 'fiveStar'];
 let submit = qi('submit');
-
-let ratings = qi('oneStar').checked;
-
+let qos = 0;
 
 //for (let item in )
 
 let finalBill = {
+    bill: 0,
+    tip: 0,
+    total: 0,
     getTotal: function() {
-        alert(bill);
-        alert(partySize);
-        alert(ratings); 
+        for (let i in ratings) {
+            if (qi(ratings[i]).checked) {
+                qos = qi(ratings[i]).value;
+            }
+        }
+       
+        this.bill = Number(qi('price').value);
+        this.tip = (qos / 100) * this.bill;
+        this.total = this.bill + this.tip;
+
+        alert(this.bill);
+        alert(this.tip);
+        alert(this.total);
+        alert(this.total / partySize);
+
+        qi('tipAmount').innerHTML = this.tip;
+        qi('grandTotal').innerHTML = this.total;
+        qi('sharePerPerson').innerHTML = this.total / partySize;
     }
 }
 
