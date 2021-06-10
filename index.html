@@ -17,11 +17,13 @@
         <h2>Restaurant</h2>
 
 
-    <form action="/action_page.php">
+    <div>
         <label for="price">Price:</label><br>
         <input type="text" id="price" name="price"><br>
+
         <label for="numberOfPeople">Number of People:</label><br>
         <input type="text" id="numberOfPeople" name="numberOfPeople"><br>
+        
         <p>Quality of Service:</p>
         <input type="radio" id="oneStar" name="qualityOfService" value="10">
         <label for="oneStar">*</label><br>
@@ -34,7 +36,22 @@
         <input type="radio" id="fiveStar" name="qualityOfService" value="25">
         <label for="fiveStar">*****</label><br>
         <input type="submit" value="Submit">
-    </form>
+    </div>
+
+    <h2>Tip Amount</h2>
+    <div id="tipAmount">
+        <h2>$ 0.00</h2>
+    </div>
+
+    <h2>Grand Total</h2>
+    <div id="grandtotal">
+        <h2>$ 0.00</h2>
+    </div>
+
+    <h2>Share Per Person</h2>
+    <div id="sharePerPerson">
+        <h2>$ 0.00<span> each</span></h2>
+    </div>
 
     <script src="assets/scripts/tipcalculator.js"></script>
 
