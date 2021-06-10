@@ -1,0 +1,39 @@
+body, p {
+    background-color: tan;
+    color: sienna;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    background-color: rgb(168, 140, 104);
+    color: steelblue;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#radiobtn {
+    background-color:rgb(104, 130, 168);
+    color: steelblue;
+    display: block;
+    position: relative;
+    padding: 10px;
+    cursor: crosshair;
+    font-size: 12px;
+}
+
+footer {
+    background-color: rgb(168, 140, 104);
+    color: sienna;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
