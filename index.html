@@ -5,39 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/stylesheet.css">
     <title>Tip Calculator Group Project</title>
 </head>
 
 <body>
-    <header>
-        <h1>Tip Calculator</h1>
-    </header>
-    <div id="mainarea">
-        <h2>Restaurant</h2>
-
-        <form action="/action_page.php">
-            <label for="price">Price of Meal:</label><br>
-            <input type="text" id="price" name="price"><br><br>
-            <label for="numberOfPeople">Number of People:</label><br>
-            <input type="text" id="numberOfPeople" name="numberOfPeople"><br>
-            <p class="quality">Quality of Service:</p>
-            <div id="radiobtns">
-                <input type="radio" id="oneStar" name="oneStar" value="10">
-                <label for="oneStar">&#9733;</label><br>
-                <input type="radio" id="twoStar" name="twoStar" value="15">
-                <label for="twoStar">&#9733;&#9733;</label><br>
-                <input type="radio" id="threeStar" name="threeStar" value="18">
-                <label for="threeStar">&#9733;&#9733;&#9733;</label><br>
-                <input type="radio" id="fourStar" name="fourStar" value="20">
-                <label for="fourStar">&#9733;&#9733;&#9733;&#9733;</label><br>
-                <input type="radio" id="fiveStar" name="fiveStar" value="25">
-                <label for="fiveStar">&#9733;&#9733;&#9733;&#9733;&#9733;</label><br><br>
-                <input type="submit" value="Submit" id="submit">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-lg-12">
+                    <header>
+                        <h1>&#9733; Tip Calculator &#9733;</h1>
+                    </header>
+                </div> 
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="mainarea"><br>
+                            <h2>Restaurant</h2>
+                                <label for="price">Price of Meal:</label><br>
+                                <input type="text" id="price" name="price"><br><br>
+                                <label for="numberOfPeople">Number of People:</label><br>
+                                <input type="text" id="numberOfPeople" name="numberOfPeople"><br>
+                                <p class="quality">Quality of Service:</p>
+                                <div id="radiobtns">
+                                    <input type="radio" id="oneStar" name="oneStar" value="10">
+                                    <label for="oneStar">&#9733;</label><br>
+                                    <input type="radio" id="twoStar" name="twoStar" value="15">
+                                    <label for="twoStar">&#9733;&#9733;</label><br>
+                                    <input type="radio" id="threeStar" name="threeStar" value="18">
+                                    <label for="threeStar">&#9733;&#9733;&#9733;</label><br>
+                                    <input type="radio" id="fourStar" name="fourStar" value="20">
+                                    <label for="fourStar">&#9733;&#9733;&#9733;&#9733;</label><br>
+                                    <input type="radio" id="fiveStar" name="fiveStar" value="25">
+                                    <label for="fiveStar">&#9733;&#9733;&#9733;&#9733;&#9733;</label><br><br>
+                                    <input type="submit" value="Submit" id="submit">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="imgplace">
+                        <img src="assets/images/Tip-Em-Icon.png" id="calcimg" width="100%">
+                    </div>
+                </div>
             </div>
-        </form>
+        </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="assets/scripts/tipcalculator.js"></script>
 
 </body>
