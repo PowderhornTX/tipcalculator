@@ -8,22 +8,30 @@ inputs: bill, number of people in party, QoS
 
 outputs: bill with tip, divided bill with tip
 
+tipAmount
+grandTotal
+perPerson
+
 */
 
-//let bill = Number(qi('bill').value);
-//let partySize = Number(qi('partysize').value);
-let bill = Number(document.getElementById('bill').value);
-let partySize = Number(document.getElementById('partysize').value);
-let rating = null;
-let submit = document.getElementById('submit');
+//let bill = Number(qi('price').value);
+let bill = Number(qi('price').value);
+let partySize = Number(qi('numberOfPeople').value);
+//let bill = Number(document.getElementById('price').value);
+//let partySize = Number(document.getElementById('numberOfPeople').value);
+let submit = qi('submit');
 
-submit.addEventListener('click', finalBill.getTotal);
+let ratings = qi('oneStar').checked;
 
 
-
+//for (let item in )
 
 let finalBill = {
     getTotal: function() {
         alert(bill);
+        alert(partySize);
+        alert(ratings); 
     }
 }
+
+submit.addEventListener('click', finalBill.getTotal);
