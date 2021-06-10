@@ -1,30 +1,47 @@
 body, p {
     background-color: tan;
     color: sienna;
-    position: absolute;
+    position: relative;
     width: 80%;
-    text-align: center;
+    text-align: left;
     padding-top: 20px;
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.quality {
+    font-size: 16px;
 }
 
 h1 {
+    padding: 30px;
     background-color: rgb(168, 140, 104);
-    color: steelblue;
-    position: absolute;
-    font-size: 20px;
+    color: rgb(45, 94, 134);
+    position: relative;
+    font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#radiobtn {
-    background-color:rgb(104, 130, 168);
+#submit {
+    background-color: sienna;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+
+#mainarea {
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+}
+#radiobtns {
     color: steelblue;
     display: block;
     position: relative;
     padding: 10px;
     cursor: crosshair;
-    font-size: 12px;
+    font-size: 20px;
 }
 
 footer {
@@ -32,7 +49,7 @@ footer {
     color: sienna;
     position: absolute;
     width: 80%;
-    text-align: center;
+    text-align: left;
     padding: 40px;
     font-size: 14px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

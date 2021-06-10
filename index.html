@@ -12,29 +12,31 @@
 <body>
     <header>
         <h1>Tip Calculator</h1>
+    </header>
+    <div id="mainarea">
         <h2>Restaurant</h2>
 
-    </header>
-
-
-    <form action="/action_page.php">
-        <label for="price">Price:</label><br>
-        <input type="text" id="price" name="price"><br>
-        <label for="numberOfPeople">Number of People:</label><br>
-        <input type="text" id="numberOfPeople" name="numberOfPeople"><br>
-        <p>Quality of Service:</p>
-        <input type="radio" id="oneStar" name="oneStar" value="10">
-        <label for="oneStar">*</label><br>
-        <input type="radio" id="twoStar" name="twoStar" value="15">
-        <label for="twoStar">**</label><br>
-        <input type="radio" id="threeStar" name="threeStar" value="18">
-        <label for="threeStar">***</label><br>
-        <input type="radio" id="fourStar" name="fourStar" value="20">
-        <label for="fourStar">****</label><br>
-        <input type="radio" id="fiveStar" name="fiveStar" value="25">
-        <label for="fiveStar">*****</label><br>
-        <input type="submit" value="Submit">
-    </form>
+        <form action="/action_page.php">
+            <label for="price">Price of Meal:</label><br>
+            <input type="text" id="price" name="price"><br><br>
+            <label for="numberOfPeople">Number of People:</label><br>
+            <input type="text" id="numberOfPeople" name="numberOfPeople"><br>
+            <p class="quality">Quality of Service:</p>
+            <div id="radiobtns">
+                <input type="radio" id="oneStar" name="oneStar" value="10">
+                <label for="oneStar">&#9733;</label><br>
+                <input type="radio" id="twoStar" name="twoStar" value="15">
+                <label for="twoStar">&#9733;&#9733;</label><br>
+                <input type="radio" id="threeStar" name="threeStar" value="18">
+                <label for="threeStar">&#9733;&#9733;&#9733;</label><br>
+                <input type="radio" id="fourStar" name="fourStar" value="20">
+                <label for="fourStar">&#9733;&#9733;&#9733;&#9733;</label><br>
+                <input type="radio" id="fiveStar" name="fiveStar" value="25">
+                <label for="fiveStar">&#9733;&#9733;&#9733;&#9733;&#9733;</label><br><br>
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </div>
 
     <script>
     </script>
