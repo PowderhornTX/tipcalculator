@@ -5,6 +5,7 @@ let qi = document.getElementById.bind(document);
 let ratings = ['oneStar', 'twoStar', 'threeStar', 'fourStar', 'fiveStar'];
 // assign submit button for event listener
 let submit = qi('submit');
+let clear = qi('reset');
 
 //add a reset button
 let reset = qi('reset');
@@ -14,7 +15,7 @@ let finalBill = {
     partySize: 0, // user input
     tip: 0, // output
     total: 0, // output
-    getTotal: function() {
+    getTotal: function () {
 
         // set tip percentage to zero
         let qos = 0;
@@ -50,8 +51,22 @@ let finalBill = {
         qi('tipAmount').innerHTML = this.tip.toFixed(2);
         qi('grandTotal').innerHTML = this.total.toFixed(2);
         qi('sharePerPerson').innerHTML = (this.total / this.partySize).toFixed(2);
-    }
+    },
+
+    clearInput: function () {  //to reset the input values
+
+        qi('price').value = null;
+        qi('numberOfPeople').value = null;
+        qi('tipAmount').innerHTML = 0.00.toFixed(2);
+        qi('grandTotal').innerHTML = 0.00.toFixed(2);
+        qi('sharePerPerson').innerHTML = 0.00.toFixed(2);
+        ["oneStar", "twoStar", "threeStar", "fourStar", "fiveStar"].forEach(function (id) {
+            document.getElementById(id).checked = false;
+        });
+
+    },
 }
 
 //run when button is clicked
 submit.addEventListener('click', finalBill.getTotal);
+clear.addEventListener('click', finalBill.clearInput); //clear user's input
