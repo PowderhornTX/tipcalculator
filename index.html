@@ -19,8 +19,8 @@
                 </div>
             </div>
 
-            <div class="row" id="mid-row">
-                <div class="col">
+            <div class="row">
+                <div class="col" id="mid-col-1">
                     <p>
                         <label for="price">Price of Meal</label><br>
                         <input type="text" id="price" name="price"><br><br>
@@ -39,27 +39,25 @@
                         <label for="fourStar">20% &#9733; &#9733; &#9733; &#9733;</label><br>
                         <input type="checkbox" id="fiveStar" name="qualityOfService" value="25">
                         <label for="fiveStar">25% &#9733; &#9733; &#9733; &#9733; &#9733;</label>
-                        <p><input type="submit" value="Calculate" id="submit"></p>
+                        <p><br><input type="submit" value="Calculate" id="submit">
+                            <input type="submit" value="Reset" id="reset"></p>
                     </div>
                 </div>
 
-                <div class="col"><br>
+                <div class="col" id="mid-col-2"><br>
                     <div class="row">
-                        <br><img src="assets/images/Tip-Em-Icon.png" id="calcimg">
-                    </div><br>
+                        <p>Tip Amount<br>
+                            $ <span id="tipAmount">0.00</span>
+                        </p>
+                        <p>Grand Total<br>
+                            $ <span id="grandTotal">0.00</span>
+                        </p>
+                        <p>Each Person Owes<br>
+                            $ <span id="sharePerPerson">0.00</span> ea.
+                        </p>
+                    </div>
                     <div class="row">
-                        <div class="col">
-                            Tip Amount<br>
-                                $ <span id="tipAmount">0.00</span>
-                        </div>
-                        <div class="col">
-                            Grand Total<br>
-                                $ <span id="grandTotal">0.00</span>
-                        </div>
-                        <div class="col">
-                            Split Check?<br>
-                                $ <span id="sharePerPerson">0.00</span> ea.
-                        </div>
+                        <img src="assets/images/Tip-Em-Icon.png" id="calcimg">
                     </div><br>
                 </div>
             </div>

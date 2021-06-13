@@ -6,6 +6,11 @@ let ratings = ['oneStar', 'twoStar', 'threeStar', 'fourStar', 'fiveStar'];
 // assign submit button for event listener
 let submit = qi('submit');
 
+/*
+//add a reset button
+let reset = qi('reset');
+*/
+
 let finalBill = {
     bill: 0, // user input
     partySize: 0, // user input
@@ -52,3 +57,13 @@ let finalBill = {
 
 //run when button is clicked
 submit.addEventListener('click', finalBill.getTotal);
+
+/*
+//run when reset button is clicked
+reset.addEventListener('click',
+    function reset() {
+        inputValue.value = "";
+    reset();
+    return false;
+})
+*/

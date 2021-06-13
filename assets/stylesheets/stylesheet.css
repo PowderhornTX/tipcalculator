@@ -9,7 +9,7 @@ body, p {
 h1 {
     margin: 5px;
     padding: 30px;
-    background-color: rgb(215, 228, 238);
+    background-image: linear-gradient(to bottom right, rgb(143, 189, 226), rgb(255, 226, 132));
     color: rgb(45, 94, 134);
     position: relative;
     font-size: 40px;
@@ -30,7 +30,13 @@ h4 {
     letter-spacing: 1.5px;
 }
 
-#submit {
+span {
+    color:rgb(88, 147, 196);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#submit, #reset {
     padding: 8px 20px 8px 20px;
     background-color: rgb(45, 94, 134);
     font-weight: bold;
@@ -41,10 +47,17 @@ h4 {
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
-#mid-row {
+#mid-col-1 {
     background-color: rgb(177, 204, 226);
-    margin: 5px;
-    padding: 10px;
+    margin: 15px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 1em;
+}
+
+#mid-col-2 {
+    background-color: rgb(255, 226, 132);
+    margin: 15px;
+    padding: 10px 30px 10px 30px;
     border-radius: 1em;
 }
 
@@ -53,10 +66,15 @@ h4 {
     display: block;
     position: relative;
     margin: 10px;
-    font-size: 18px;
+    font-size: 16px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #calcimg {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 60px;
+    width: 200px;
 }
